@@ -2,11 +2,11 @@ package com.company.killoran;
 
 
 import java.util.*;
-import java.util.function.Consumer;
 
 public class Assortment <E> extends ArrayList<E>{
 
-    ArrayList <E> a = new ArrayList<>();
+
+    ArrayList<E> a = new ArrayList<>();
 
     public void gather(E element){
         a.add(element);
@@ -15,8 +15,13 @@ public class Assortment <E> extends ArrayList<E>{
 
     @Override
     public String toString() {
-        return "Assortment{" +
-                "a=" + a +
-                '}';
+        return super.toString();
+    }
+
+    //challenge would be to getgathered items. Maybe cookies that were not eaten
+    public void getGathered(){
+        for(E item: a){
+            System.out.println(item);
+        }
     }
 }

@@ -38,6 +38,9 @@ public class Cookies implements Comparable<Cookies>{
     public int compareTo(Cookies o) {
 
 
-        return 0;
+        int compareResult = this.type.compareTo(o.type);
+
+        return compareResult;
+
     }
 }
